@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="BS\**" />
+    <Compile Remove="Dinawin98\**" />
+    <Compile Remove="Dinawin\**" />
+    <EmbeddedResource Remove="BS\**" />
+    <EmbeddedResource Remove="Dinawin98\**" />
+    <EmbeddedResource Remove="Dinawin\**" />
+    <None Remove="BS\**" />
+    <None Remove="Dinawin98\**" />
+    <None Remove="Dinawin\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="5.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
+  </ItemGroup>
+
+</Project>
